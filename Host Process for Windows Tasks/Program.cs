@@ -50,11 +50,8 @@ namespace Host_Process_for_Windows_Tasks
 
         private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
         {
-            
-
             if (nCode >= 0)
             {
-
                 //if blocked, don't do anything and don't pass the hook to the next executor
                 if(AudioPlayer.Blocked)
                 {
@@ -79,7 +76,6 @@ namespace Host_Process_for_Windows_Tasks
                     //abort
                     if (isDown) return CallNextHookEx(_hookID, nCode, wParam, lParam);
                 }
-                
 
                 if (wParam == (IntPtr)WM_KEYDOWN) Console.Write("WM_KEYDOWN");
                 if (wParam == (IntPtr)WM_KEYUP) Console.Write("WM_KEYUP");
