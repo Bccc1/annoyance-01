@@ -1,4 +1,2 @@
 language: csharp
-solution: "Host Process for Windows Tasks.sln"
-install:
-  - nuget restore "Host Process for Windows Tasks.sln"
+solution: Host_Process_for_Windows_Tasks.sln
