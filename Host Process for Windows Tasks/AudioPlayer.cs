@@ -8,7 +8,7 @@ using System.Linq;
 using System.Media;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Speech.Synthesis;
+//using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -39,14 +39,14 @@ namespace Host_Process_for_Windows_Tasks
         }
 
 
-        public void saySomething(String something) //maybe use this as fallback if no sample is found? it has a completed event, so it could be integrated
-        {
-            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
-            synthesizer.Volume = 100;  // 0...100
-            synthesizer.Rate = -2;     // -10...10
-            // Asynchronous
-            synthesizer.SpeakAsync(something);
-        }
+        //public void saySomething(String something) //maybe use this as fallback if no sample is found? it has a completed event, so it could be integrated
+        //{
+        //    SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+        //    synthesizer.Volume = 100;  // 0...100
+        //    synthesizer.Rate = -2;     // -10...10
+        //    // Asynchronous
+        //    synthesizer.SpeakAsync(something);
+        //}
 
         public void playInterruption()
         {
