@@ -1,2 +1,2 @@
 language: csharp
-solution: Host Process for Windows Tasks.sln
+solution: "Host Process for Windows Tasks.sln"
