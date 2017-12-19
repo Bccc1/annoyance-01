@@ -5,5 +5,5 @@ deploy:
   api_key: GITHUB_OAUTH_TOKEN
   file: "Host Process for Windows Tasks/bin/Release/Host Process for Windows Tasks.exe"
   skip_cleanup: true
-  on:
-    tags: true
+#  on:
+#    tags: true
