@@ -1,5 +1,10 @@
 language: csharp
 solution: Host_Process_for_Windows_Tasks.sln
+before_deploy:
+  - ls
+  - ls "Host Process for Windows Tasks"
+  - ls "Host Process for Windows Tasks/bin"
+  - ls "Host Process for Windows Tasks/bin/Release"
 deploy:
   provider: releases
   api_key: GITHUB_OAUTH_TOKEN
