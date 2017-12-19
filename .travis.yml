@@ -7,7 +7,7 @@ before_deploy:
   - ls "Host Process for Windows Tasks/bin/Release"
 deploy:
   provider: releases
-  api_key: GITHUB_OAUTH_TOKEN
+  secure: hdwpE2H174ib1fyk0WQ/1WWaIm8UXHiD2UY/CfFN5YlT89tNYHW+zboMTaGQ20pxIQMdoaLe7RDMGhVzz8ByA0RALQXwWhQLZ7jeGNpJL8kRX51i4iYsvWim5itm69DdJnwxGSfHY4EYD5WogmsdyV4X09kH+E2j0j1EjlYiFD64+yEF4/TyaLAcT0+4Hm8ZWQnVHkmbeXpFgCtJ1wweLtcnhY2TBWZb9lEWfeBkGSex5i/uOf/84O3XjOrrs2t1S7A73F8q7Q/MPS1gjs3m+syZn4R+CGf7T3GMzZ5vaDHYnm1RVTK9FHG/jubNGrkgLEDzVuqKbnVnc6cniQ0JNnPRla4VH/kZ8S1EGaYC79RkqNSiVr/AvTvIxNd07TaYyD0k3zmc8WJlpJ1ppCzN5gYgSXBLmWjfpWftxDefcKOU0hYDLJjUfE6l2yV37s/mUnqTr+qh8B6sWsSg3JZFiZyuifGIm1x4JVGBvVIuOzZh0mJ9fP2YVAPb4EpwcKiocT8Q3qYa/H244EnxR/ErTHvg41uYg2H9ueEYlq9IURlHv9LC1DpspDRaWuLUOQ2QDwzbv6u6+a0aT1jKFxK1iK6eltsA89Xokc3ieU82LaGxaP0SpcHM8QoOAr3OZLt9PcuNHb7hN68vSdFuU1yF5Cz3uewpcaH52c8iIsA6Z+8=
   file: "Host Process for Windows Tasks/bin/Release/Host Process for Windows Tasks.exe"
   skip_cleanup: true
 #  on:
