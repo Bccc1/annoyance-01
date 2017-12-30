@@ -110,7 +110,7 @@ namespace Host_Process_for_Windows_Tasks
                 //StreamWriter sw = new StreamWriter(Application.StartupPath + @"\log.txt", true);
                 //sw.Write((Keys)vkCode);
                 var style = AudioPlayer.Style.lowercase;
-                if ((_shiftLIsActive || _shiftRIsActive) && vkCode >= (int)Keys.A && vkCode <= (int)Keys.Z) style = AudioPlayer.Style.uppercase;
+                if ((_shiftLIsActive || _shiftRIsActive) && ((vkCode >= (int)Keys.A && vkCode <= (int)Keys.Z) || vkCode ==(int)Keys.Oemtilde || vkCode == (int)Keys.Oem1 || vkCode == (int)Keys.Oem7)) style = AudioPlayer.Style.uppercase;
                 if (_capslockIsActive) style = AudioPlayer.Style.capslock; //TODO Capslock + Shift, what should happen?
                 if (_audioPlayer.ConsecutiveInterruptions > 5)
                 {
